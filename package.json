@@ -1,0 +1,36 @@
+{
+  "name": "tesis",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "refine dev",
+    "build": "refine build",
+    "start": "refine start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/server": "^11.10.0",
+    "@mantine/core": "^5.10.4",
+    "@mantine/form": "^5.10.4",
+    "@mantine/hooks": "^5.10.4",
+    "@mantine/next": "^6.0.1",
+    "@mantine/notifications": "^5.10.4",
+    "@prisma/client": "^5.5.2",
+    "@refinedev/cli": "^2.7.4",
+    "@refinedev/core": "^4.28.2",
+    "@refinedev/devtools": "^1.1.6",
+    "@refinedev/inferencer": "^4.3.2",
+    "@refinedev/kbar": "^1.1.2",
+    "@refinedev/mantine": "^2.5.0",
+    "@refinedev/nextjs-router": "^5.3.2",
+    "@refinedev/react-table": "^5.1.4",
+    "@refinedev/simple-rest": "^4.0.0",
+    "@tabler/icons": "^1.1.0",
+    "next": "^13.0.6",
+    "next-i18next": "^8.9.0",
+    "nookies": "^2.5.2",
+    "prisma": "^5.5.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}

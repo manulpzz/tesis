@@ -1,0 +1,110 @@
+{
+  "pages": {
+    "error": {
+      "info": "Es posible que haya olvidado agregar el componente {{action}} al recurso {{resource}}.",
+      "404": "La página que estás visitando no existe.",
+      "resource404": ".",
+      "backHome": "Volver al Inicio."
+    }
+  },
+  "actions": {
+    "list": "Lista",
+    "create": "Crear",
+    "edit": "Editar",
+    "show": "Ver"
+  },
+  "buttons": {
+    "create": "Crear",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "filter": "Filtrar",
+    "clear": "Limpiar",
+    "refresh": "Recargar",
+    "show": "Ver",
+    "undo": "Deshacer"
+  },
+  "warnWhenUnsavedChanges": "¿Estás seguro que quieres irte? Tienes cambios sin guardar.",
+  "notifications": {
+    "success": "Éxito",
+    "error": "Error (código: {{statusCode}})",
+    "undoable": "Tienes {{seconds}} segundos para deshacer el cambio",
+    "createSuccess": "Creación exitosa",
+    "createError": "Hubo un error en la creación (código: {{statusCode}})",
+    "deleteSuccess": "Eliminación exitosa",
+    "deleteError": "Hubo un error en la eliminación {{resource}} (código: {{statusCode}})",
+    "editSuccess": "Edición exitosa",
+    "editError": "Hubo un error en la edición (código: {{statusCode}})"
+  },
+  "loading": "Cargando",
+  "products": {
+    "products": "Productos",
+    "fields": {
+      "id": "Código",
+      "name": "Nombre",
+      "quantity": "Cantidad",
+      "price": "Precio",
+      "brand": "Marca",
+      "category": "Rubro"
+    },
+    "titles": {
+      "create": "Crear Producto",
+      "edit": "Editar Producto",
+      "list": "Productos",
+      "show": "Ver Producto"
+    }
+  },
+  "categories": {
+    "categories": "Rubros",
+    "fields": {
+      "id": "Código",
+      "name": "Nombre"
+    },
+    "titles": {
+      "create": "Crear Rubro",
+      "edit": "Editar Rubro",
+      "list": "Rubros",
+      "show": "Ver Rubro"
+    }
+  },
+  "brands": {
+    "brands": "Marcas",
+    "fields": {
+      "id": "Código",
+      "name": "Nombre"
+    },
+    "titles": {
+      "create": "Crear Marca",
+      "edit": "Editar Marca",
+      "list": "Marcas",
+      "show": "Ver Marca"
+    }
+  },
+  "documentTitle": {
+    "default": "Gestión de Inventario",
+    "suffix": "",
+    "products": {
+      "list": "Productos",
+      "show": "Producto #{{id}}",
+      "edit": "Editar Producto #{{id}}",
+      "create": "Crear Producto"
+    },
+    "brands": {
+      "list": "Marcas",
+      "show": "Marca #{{id}}",
+      "edit": "Editar Marca #{{id}}",
+      "create": "Crear Marca"
+    },
+    "categories": {
+      "list": "Rubros",
+      "show": "Rubro #{{id}}",
+      "edit": "Editar Rubro #{{id}}",
+      "create": "Crear Rubro"
+    }
+  },
+  "table": {
+    "actions": "Acciones"
+  }
+}
