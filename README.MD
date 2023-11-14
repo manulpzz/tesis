@@ -1,6 +1,7 @@
 Tecnologías:
 - refine (refine.dev -> refine.new): next.js (backend/frontend/motor) -> mantine (interfaz visual) -> RestAPI (backend) -> no auth
 - vercel (servidor y base de datos)
+-prisma conectar base de datos con el codigo
 
  
 ```sql

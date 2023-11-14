@@ -82,6 +82,19 @@
       "show": "Ver Marca"
     }
   },
+  "manufacturers": {
+    "manufacturers": "Fabricante",
+    "fields": {
+      "id": "Código",
+      "name": "Nombre"
+    },
+    "titles": {
+      "create": "Crear Fabricante",
+      "edit": "Editar Fabricante",
+      "list": "Fabricantes",
+      "show": "Ver Fabricante"
+    }
+  },
   "documentTitle": {
     "default": "Gestión de Inventario",
     "suffix": "",
@@ -96,6 +109,12 @@
       "show": "Marca #{{id}}",
       "edit": "Editar Marca #{{id}}",
       "create": "Crear Marca"
+    },
+    "manufacturers": {
+      "list": "Fabricantes",
+      "show": "Fabricante #{{id}}",
+      "edit": "Editar Fabricante #{{id}}",
+      "create": "Crear Fabricante"
     },
     "categories": {
       "list": "Rubros",
