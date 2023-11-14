@@ -1,3 +1,7 @@
+Tecnologías:
+- refine (refine.dev -> refine.new): next.js (backend/frontend/motor) -> mantine (interfaz visual) -> RestAPI (backend) -> no auth
+
+
 ```sql
 CREATE TABLE manufacturers (
     id VARCHAR(255) NOT NULL PRIMARY KEY,
