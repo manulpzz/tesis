@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         Title={({ collapsed }) => (
           <ThemedTitleV2
             collapsed={collapsed}
-            text="Gestión de Inventario"
+            text="Tesis"
           />
         )}
       >
@@ -75,6 +75,16 @@ function MyApp({ Component, pageProps }) {
                 create: "/brands/create",
                 edit: "/brands/edit/:id",
                 show: "/brands/show/:id",
+                meta: {
+                  canDelete: true,
+                },
+              },
+              {
+                name: "manufacturers",
+                list: "/manufacturers",
+                create: "/manufacturers/create",
+                edit: "/manufacturers/edit/:id",
+                show: "/manufacturers/show/:id",
                 meta: {
                   canDelete: true,
                 },
