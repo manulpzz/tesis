@@ -31,14 +31,14 @@ export default function grupomodeloucstList() {
         header: translate("grupomodelos.fields.price"),
       },
       {
-        id: "brand_id",
-        header: translate("grupomodelos.fields.brand"),
-        accessorKey: "brand_id",
+        id: "grupomodelo_id",
+        header: translate("grupomodelos.fields.grupomodelo"),
+        accessorKey: "grupomodelo_id",
         cell: function render({ getValue, table }) {
-          const brand = table.options.meta.brandData?.data?.find(
+          const grupomodelo = table.options.meta.grupomodeloData?.data?.find(
             (item) => item.id == getValue(),
           )
-          return brand?.id ?? "Cargando..."
+          return grupomodelo?.id ?? "Cargando..."
         },
       },
       {
@@ -82,9 +82,9 @@ export default function grupomodeloucstList() {
     },
   } = useTable({columns})
 
-  const { data: brandData } = useMany({
-    resource: "brands",
-    ids: tableData?.data?.map((item) => item?.brand_id) ?? [],
+  const { data: grupomodeloData } = useMany({
+    resource: "grupomodelos",
+    ids: tableData?.data?.map((item) => item?.grupomodelo_id) ?? [],
     queryOptions: {
       enabled: !!tableData?.data,
     },
@@ -103,7 +103,7 @@ export default function grupomodeloucstList() {
     meta: {
       ...prev.meta,
       categoryData,
-      brandData,
+      grupomodeloData,
     },
   }))
 

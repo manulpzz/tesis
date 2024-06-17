@@ -10,9 +10,9 @@ export default function grupomodeloShow() {
 
   const record = data?.data
 
-  const { data: brandData, isLoading: brandIsLoading } = useOne({
-    resource: "brands",
-    id: record?.brand_id || "",
+  const { data: grupomodeloData, isLoading: grupomodeloIsLoading } = useOne({
+    resource: "grupomodelos",
+    id: record?.grupomodelo_id || "",
     queryOptions: {
       enabled: !!record,
     },
@@ -49,9 +49,9 @@ export default function grupomodeloShow() {
       <NumberField value={record?.price} />
 
       <Title my="xs" order={5}>
-        {translate("grupomodelos.fields.brand")}
+        {translate("grupomodelos.fields.grupomodelo")}
       </Title>
-      {brandIsLoading ? <>Cargando...</> : <>{brandData?.data?.id}</>}
+      {grupomodeloIsLoading ? <>Cargando...</> : <>{grupomodeloData?.data?.id}</>}
 
       <Title my="xs" order={5}>
         {translate("grupomodelos.fields.category")}

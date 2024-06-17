@@ -15,7 +15,7 @@ export default function grupomodeloEdit() {
       name: "",
       quantity: "",
       price: "",
-      brand_id: "",
+      grupomodelo_id: "",
       category_id: "",
     },
   })
@@ -45,8 +45,8 @@ export default function grupomodeloEdit() {
       />
       <TextInput
         mt="sm"
-        label={translate("grupomodeloucts.fields.brand")}
-        {...getInputProps("brand_id")}
+        label={translate("grupomodeloucts.fields.grupomodelo")}
+        {...getInputProps("grupomodelo_id")}
       />
       <TextInput
         mt="sm"
