@@ -7,7 +7,7 @@ export default async function handler(request, response) {
   const { id } = request.query
 
   if (request.method === "GET") {
-    data = await prisma.brand.findUnique({
+    data = await prisma.manufacturers.findUnique({
       select: {
         id: true,
         name: true,
@@ -16,14 +16,14 @@ export default async function handler(request, response) {
     })
   } else if (request.method === "PATCH") {
     const { name } = request.body
-    await prisma.brand.update({
+    await prisma.manufacturers.update({
       data: {
         name,
       },
       where: { id },
     })
   } else if (request.method === "DELETE") {
-    await prisma.brand.delete({
+    await prisma.manufacturers.delete({
       where: { id },
     })
   }
