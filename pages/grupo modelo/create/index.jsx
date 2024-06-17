@@ -3,7 +3,7 @@ import { useTranslate } from "@refinedev/core";
 import { Create, useForm } from "@refinedev/mantine";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
-export default function grupomodelocreate() {
+export default function grupomodeloCreate() {
   const translate = useTranslate()
   const {
     getInputProps,
