@@ -1,9 +1,9 @@
-import { TextInput } from "@mantine/core"
+import { NumberInput, TextInput } from "@mantine/core"
 import { useTranslate } from "@refinedev/core"
 import { Edit, useForm } from "@refinedev/mantine"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
-export default function CategoryEdit() {
+export default function grupomodeloEdit() {
   const translate = useTranslate()
   const {
     getInputProps,
@@ -13,6 +13,10 @@ export default function CategoryEdit() {
     initialValues: {
       id: "",
       name: "",
+      quantity: "",
+      price: "",
+      brand_id: "",
+      category_id: "",
     },
   })
 
@@ -21,13 +25,33 @@ export default function CategoryEdit() {
       <TextInput
         disabled
         mt="sm"
-        label={translate("categories.fields.id")}
+        label={translate("products.fields.id")}
         {...getInputProps("id")}
       />
       <TextInput
         mt="sm"
-        label={translate("categories.fields.name")}
+        label={translate("products.fields.name")}
         {...getInputProps("name")}
+      />
+      <NumberInput
+        mt="sm"
+        label={translate("products.fields.quantity")}
+        {...getInputProps("quantity")}
+      />
+      <TextInput
+        mt="sm"
+        label={translate("products.fields.price")}
+        {...getInputProps("price")}
+      />
+      <TextInput
+        mt="sm"
+        label={translate("products.fields.brand")}
+        {...getInputProps("brand_id")}
+      />
+      <TextInput
+        mt="sm"
+        label={translate("products.fields.category")}
+        {...getInputProps("category_id")}
       />
     </Edit>
   )
