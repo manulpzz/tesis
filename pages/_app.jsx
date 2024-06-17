@@ -69,6 +69,16 @@ function MyApp({ Component, pageProps }) {
                   canDelete: true,
                 },
               },
+                            {
+                name: "manufacturers",
+                list: "/manufacturers",
+                create: "/manufacturers/create",
+                edit: "/manufacturers/edit/:id",
+                show: "/manufacturers/show/:id",
+                meta: {
+                  canDelete: true,
+                },
+              },
               {
                 name: "categories",
                 list: "/categories",
@@ -80,16 +90,6 @@ function MyApp({ Component, pageProps }) {
                 },
               },
              
-              {
-                name: "manufacturers",
-                list: "/manufacturers",
-                create: "/manufacturers/create",
-                edit: "/manufacturers/edit/:id",
-                show: "/manufacturers/show/:id",
-                meta: {
-                  canDelete: true,
-                },
-              },
             ]}
             options={{
               syncWithLocation: true,
