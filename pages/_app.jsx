@@ -70,6 +70,16 @@ function MyApp({ Component, pageProps }) {
                 },
               },
               {
+                name: "Grupo Modelo",
+                list: "/Grupo Modelo",
+                create: "/Grupo Modelo/create",
+                edit: "/Grupo Modelo/edit/:id",
+                show: "/Grupo Modelo/show/:id",
+                meta: {
+                  canDelete: true,
+                },
+              },
+              {
                 name: "manufacturers",
                 list: "/manufacturers",
                 create: "/manufacturers/create",
