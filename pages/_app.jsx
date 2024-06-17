@@ -69,7 +69,7 @@ function MyApp({ Component, pageProps }) {
                   canDelete: true,
                 },
               },
-                            {
+              {
                 name: "manufacturers",
                 list: "/manufacturers",
                 create: "/manufacturers/create",
