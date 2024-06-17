@@ -25,32 +25,32 @@ export default function grupomodeloEdit() {
       <TextInput
         disabled
         mt="sm"
-        label={translate("products.fields.id")}
+        label={translate("grupomodeloucts.fields.id")}
         {...getInputProps("id")}
       />
       <TextInput
         mt="sm"
-        label={translate("products.fields.name")}
+        label={translate("grupomodeloucts.fields.name")}
         {...getInputProps("name")}
       />
       <NumberInput
         mt="sm"
-        label={translate("products.fields.quantity")}
+        label={translate("grupomodeloucts.fields.quantity")}
         {...getInputProps("quantity")}
       />
       <TextInput
         mt="sm"
-        label={translate("products.fields.price")}
+        label={translate("grupomodeloucts.fields.price")}
         {...getInputProps("price")}
       />
       <TextInput
         mt="sm"
-        label={translate("products.fields.brand")}
+        label={translate("grupomodeloucts.fields.brand")}
         {...getInputProps("brand_id")}
       />
       <TextInput
         mt="sm"
-        label={translate("products.fields.category")}
+        label={translate("grupomodeloucts.fields.category")}
         {...getInputProps("category_id")}
       />
     </Edit>

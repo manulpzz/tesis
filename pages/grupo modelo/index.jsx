@@ -6,7 +6,7 @@ import { List, EditButton, ShowButton, DeleteButton } from "@refinedev/mantine"
 import { flexRender } from "@tanstack/react-table"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
-export default function ProducstList() {
+export default function grupomodeloucstList() {
   const translate = useTranslate()
   const columns = React.useMemo(
     () => [
