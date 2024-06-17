@@ -7,7 +7,7 @@ export default async function handler(request, response) {
   const { id } = request.query
 
   if (request.method === "GET") {
-    data = await prisma.grupo modelo.findUnique({
+    data = await prisma.grupomodelo.findUnique({
       select: {
         id: true,
         name: true,
@@ -16,14 +16,14 @@ export default async function handler(request, response) {
     })
   } else if (request.method === "PATCH") {
     const { name } = request.body
-    await prisma.grupo modelo.update({
+    await prisma.grupomodelo.update({
       data: {
         name,
       },
       where: { id },
     })
   } else if (request.method === "DELETE") {
-    await prisma.grupo modelo.delete({
+    await prisma.grupomodelo.delete({
       where: { id },
     })
   }
