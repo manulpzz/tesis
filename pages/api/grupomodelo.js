@@ -21,10 +21,6 @@ export default async function handler(request, response) {
       select: {
         id: true,
         name: true,
-        quantity: true,
-        price: true,
-        brand_id: true,
-        category_id: true,
       },
       where,
       orderBy: {
@@ -38,50 +34,11 @@ export default async function handler(request, response) {
       data.push(element)
     })
   } else if (request.method === "POST") {
-    const { id, name, quantity, price, brand_id, category_id } = request.body
-    const brand = await prisma.brand.findFirst({
-      where: {
-        id: {
-          equals: brand_id,
-          mode: "insensitive",
-        }
-      },
-    })
-
-    const category = await prisma.category.findFirst({
-      where: {
-        id: {
-          equals: category_id,
-          mode: "insensitive",
-        }
-      },
-    })
-
-    const brandModel = await prisma.brandModel.findFirst({})
-    const brandModelVersion = await prisma.brandModelVersion.findFirst({})
-    const manufacturer = await prisma.manufacturer.findFirst({})
-
+    const { id, name } = request.body
     await prisma.grupomodelo.create({
       data: {
         id,
         name,
-        quantity,
-        price,
-        brand: {
-          connect: { id: brand.id },
-        },
-        category: {
-          connect: { id: category.id },
-        },
-        brandModel: {
-          connect: { id: brandModel.id },
-        },
-        brandModelVersion: {
-          connect: { id: brandModelVersion.id },
-        },
-        manufacturer: {
-          connect: { id: manufacturer.id },
-        },
       },
     })
   }
