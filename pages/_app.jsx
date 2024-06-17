@@ -60,16 +60,6 @@ function MyApp({ Component, pageProps }) {
                 },
               },
               {
-                name: "categories",
-                list: "/categories",
-                create: "/categories/create",
-                edit: "/categories/edit/:id",
-                show: "/categories/show/:id",
-                meta: {
-                  canDelete: true,
-                },
-              },
-              {
                 name: "brands",
                 list: "/brands",
                 create: "/brands/create",
@@ -79,6 +69,17 @@ function MyApp({ Component, pageProps }) {
                   canDelete: true,
                 },
               },
+              {
+                name: "categories",
+                list: "/categories",
+                create: "/categories/create",
+                edit: "/categories/edit/:id",
+                show: "/categories/show/:id",
+                meta: {
+                  canDelete: true,
+                },
+              },
+             
               {
                 name: "manufacturers",
                 list: "/manufacturers",
