@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client"
+import { scryRenderedDOMComponentsWithTag } from "react-dom/test-utils"
 
 const prisma = new PrismaClient()
 
@@ -29,7 +30,8 @@ export default async function handler(request, response) {
       take: limit ? Number(limit) : undefined,
       skip: offset ? Number(offset) : undefined,
     })
-
+    
+  }
     items.forEach(element => {
       data.push(element)
     })
@@ -42,6 +44,5 @@ export default async function handler(request, response) {
       },
     })
   }
-
   return response.status(200).json(data)
 }
